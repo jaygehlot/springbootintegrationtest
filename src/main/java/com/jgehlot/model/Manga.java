@@ -2,7 +2,11 @@ package com.jgehlot.model;
 
 import lombok.*;
 
-@Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Manga {
 
     private Integer mal_id;

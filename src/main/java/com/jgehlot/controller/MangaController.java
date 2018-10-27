@@ -27,7 +27,7 @@ public class MangaController {
     }
 
     @RequestMapping(value = "/sync/{title}", method = RequestMethod.GET)
-    public @ResponseBody List<Manga> searchSync(@PathVariable(name = "title") String title) {
+    public List<Manga> searchSync(@PathVariable(name = "title") String title) {
         return mangaService.getMangasByTitle(title);
     }
 }
